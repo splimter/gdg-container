@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.css";
+
 const Welcome = () => {
   return (
     <svg

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navigation/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import blue from "@material-ui/core/colors/blue";

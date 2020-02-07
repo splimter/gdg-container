@@ -7,17 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import Routes from "../routes/index";
+import Routes from "../../routes/index";
 import { NavLink } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 
-import Drawer from "@material-ui/core/Drawer";
-
-import List from "@material-ui/core/List";
-import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import SideDrawer from "./SideDrawer";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,12 +30,6 @@ const useStyles = makeStyles(theme => ({
   },
   navLink: {
     color: "#FFF"
-  },
-  list: {
-    width: 250
-  },
-  fullList: {
-    width: 250
   }
 }));
 
@@ -60,7 +48,6 @@ function ButtonAppBar() {
 
     setState({ ...state, [side]: open });
   };
-
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -100,40 +87,10 @@ function ButtonAppBar() {
               );
             })}
           </Box>
-
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
 
-      <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
-        <div
-          className={classes.fullList}
-          role="presentation"
-          onClick={toggleDrawer("left", false)}
-          onKeyDown={toggleDrawer("left", false)}
-        >
-          <img src="/logo.png" style={{ width: "100%" }} />
-          <Divider />
-          <List>
-            {Routes.map((prop, index) => (
-              <ListItem button key={index}>
-                <ListItemIcon>
-                  <prop.icon />
-                </ListItemIcon>
-                <ListItemText>
-                  <NavLink
-                    to={prop.path}
-                    style={{ textDecoration: "none" }}
-                    key={index}
-                  >
-                    <Box className="text-gray">{prop.sidebarName}</Box>
-                  </NavLink>
-                </ListItemText>
-              </ListItem>
-            ))}
-          </List>
-        </div>
-      </Drawer>
+      <SideDrawer status={state.left} onClose={toggleDrawer} />
     </div>
   );
 }
