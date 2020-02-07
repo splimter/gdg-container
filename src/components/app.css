@@ -1,0 +1,16 @@
+#Path_2118 {
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translate(212.962 1047.5px) rotate(-60deg);
+  }
+  to {
+    transform: translate(212.962 1047.5px) rotate(160deg);
+  }
+}
