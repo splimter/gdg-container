@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * ``yarn`` or `npm i` to install the website's npm dependencies.
 
 * `git pull upstream master` to ensure you have the latest main code then run `git push` to update your forked repo.
+_note_: if a dependencies are added run again `npm i`.
 
 ## Available Scripts
 
