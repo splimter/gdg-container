@@ -34,7 +34,11 @@ function SideDrawer({ status, onClose }) {
           onClick={onClose("left", false)}
           onKeyDown={onClose("left", false)}
         >
-          <img src="/logo.png" style={{ width: "100%" }} alt="gdg logo"/>
+          <img
+            src="/assets/logo.png"
+            style={{ width: "100%" }}
+            alt="gdg logo"
+          />
           <Divider />
           <List>
             {Routes.map((prop, index) => (

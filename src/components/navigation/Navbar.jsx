@@ -26,10 +26,10 @@ const useStyles = makeStyles(theme => ({
   navItems: {
     marginLeft: 15,
     marginRight: 15,
-    color: "#FFF"
+    color: "#333"
   },
   navLink: {
-    color: "#FFF"
+    color: "#333"
   }
 }));
 
@@ -50,7 +50,7 @@ function ButtonAppBar() {
   };
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar color={"inherit"} position="static">
         <Toolbar>
           <Box display={{ xs: "block", md: "none" }}>
             <IconButton
@@ -66,22 +66,23 @@ function ButtonAppBar() {
           </Box>
 
           <Typography variant="h6" className={classes.title}>
-            GDG Chlef
+            GDG Chlef Chapter
           </Typography>
           <Box display={{ xs: "none", md: "block", lg: "block" }}>
             {Routes.map((prop, key) => {
               return (
                 <Button
+                  key={key}
                   className={classes.navItems}
-                  startIcon={<prop.icon color="white" />}
+                  startIcon={<prop.icon />}
                 >
                   <NavLink
-                    className="text-whtie"
+                    className="text-gray"
                     to={prop.path}
                     style={{ textDecoration: "none" }}
                     key={key}
                   >
-                    <Box class="text-white">{prop.sidebarName}</Box>
+                    <Box key={key}>{prop.sidebarName}</Box>
                   </NavLink>
                 </Button>
               );

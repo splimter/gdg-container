@@ -1,5 +1,5 @@
 import { Home, InfoOutlined } from "@material-ui/icons";
-import HomePage from "../pages/Home";
+import HomePage from "../views/Home/Home";
 import AboutPage from ".";
 
 const Routes = [

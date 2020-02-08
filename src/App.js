@@ -5,13 +5,15 @@ import Navbar from "./components/navigation/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import blue from "@material-ui/core/colors/blue";
+
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
-import HomePage from "./pages/Home";
+import HomePage from "./pages/Home/Home";
 import AboutPage from "./pages/About";
 
 const theme = createMuiTheme({
   palette: {
-    primary: blue
+    primary: blue,
+    white: "#FFF"
   }
 });
 

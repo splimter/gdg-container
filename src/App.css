@@ -2,5 +2,9 @@
   color: #fff !important;
 }
 .text-gray {
-  color: #333;
+  color: #333 !important;
+}
+
+.bg-blue {
+  background-color: #f1f9ff;
 }
