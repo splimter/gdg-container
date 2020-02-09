@@ -8,7 +8,7 @@ import blue from "@material-ui/core/colors/blue";
 
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import HomePage from "./views/Home/Home";
-import AboutPage from "./views/About";
+import AboutPage from "./views/About/About";
 
 const theme = createMuiTheme({
   palette: {
