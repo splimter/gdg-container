@@ -4,7 +4,7 @@ import AboutPage from ".";
 
 const Routes = [
   {
-    path: "/home",
+    path: "/",
     sidebarName: "Home",
     navbarName: "Home",
     icon: Home,

@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function ButtonAppBar() {
+function NavBar() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     left: false
@@ -95,4 +95,4 @@ function ButtonAppBar() {
     </div>
   );
 }
-export default ButtonAppBar;
+export default NavBar;
