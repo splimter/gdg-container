@@ -10,11 +10,11 @@
 _note_: if a dependencies are added run again `npm i`.
 
 ### Push your code
-
 * `git checkout -b branch-name` (replacing branch-name with a suitable name) to create a branch.
 * make your changes.
+* `git add -A && git commit -m "My message"` (replacing **My message** with a commit message, such as Fixed header).
 * `git push origin branch-name`.
-* In github website, select the **branch-name** then make a new pull request.
+* In github website, select the **branch-name** then make a new pull request (if you pull a request and it's still under review, and you push new changes under same branch then your update will auto pass to review no need to repull a request).
 
 ### Guidlines
 
