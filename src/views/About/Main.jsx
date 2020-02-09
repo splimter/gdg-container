@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
-import { Box, Divider } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,7 +27,6 @@ function Main() {
 
         <Grid item xs={7}>
           <Typography lineHeight={10}>
-            {" "}
             Google Developer Group Chlef is inspired by GTUG/GDG Family . We
             started our journey in Feb 2011. We try to engage student
             developers, fresh graduates and professionals through our hack
