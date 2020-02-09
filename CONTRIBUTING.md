@@ -13,7 +13,7 @@ _note_: if a dependencies are added run again `npm i`.
 
 * `git checkout -b branch-name` (replacing branch-name with a suitable name) to create a branch.
 * make your changes.
-* `git push origin branch-name`
+* `git push origin branch-name`.
 * In github website, select the **branch-name** then make a new pull request.
 
 ### Guidlines
@@ -38,4 +38,4 @@ views
   |_Home.jsx
   |_...
 ```
-* Folder must have a main compontent and may have sub compontent, css files, js files 
+* Folder must have a main compontent and may have sub compontent, css/js files as long as it is related.
