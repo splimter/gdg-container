@@ -8,3 +8,6 @@
 .bg-blue {
   background-color: #f1f9ff;
 }
+.slick-slide div {
+  outline: none !important;
+}

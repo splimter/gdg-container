@@ -6,14 +6,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import blue from "@material-ui/core/colors/blue";
 
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import HomePage from "./views/Home/Home";
 import AboutPage from "./views/About/About";
+import NavFooter from "./components/NavFooter";
 
 const theme = createMuiTheme({
   palette: {
-    primary: blue,
-    white: "#FFF"
+    primary: blue
   }
 });
 
@@ -21,17 +21,18 @@ console.log(theme.palette);
 
 function App() {
   return (
-    <div className="App">
-      <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <div className="App">
         <BrowserRouter>
           <Navbar />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
           </Switch>
+          <NavFooter />
         </BrowserRouter>
-      </MuiThemeProvider>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 

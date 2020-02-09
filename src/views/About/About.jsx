@@ -1,25 +1,26 @@
-import React, {Component} from "react";
-import HeadLine from "./HeadLine";
+import React, { Component } from "react";
+
 import Main from "./Main";
 import Guidance from "./Guidance";
-import NavFooter from "../../components/navigation/NavFooter";
+import NavFooter from "../../components/NavFooter";
+import { Container, Divider, Box } from "@material-ui/core";
 
 class AboutPage extends Component {
-    state = {};
+  state = {};
 
-    render() {
-        return (
-            <>
-                <HeadLine/>
-                <div className="container mt-2 fluid">
-                    <Main/>
-                    <Guidance/>
-                </div>
-                <NavFooter/>
-
-            </>
-        );
-    }
+  render() {
+    return (
+      <>
+        <Container>
+          <Main />
+          <Box my={8}>
+            <Divider />
+          </Box>
+          <Guidance />
+        </Container>
+      </>
+    );
+  }
 }
 
 export default AboutPage;
