@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
 
 function NavFooter(props) {
   const classes = useStyles();
-  const theme = useTheme();
+
   return (
     <>
       <Box py={2} className={classes.socials}>
