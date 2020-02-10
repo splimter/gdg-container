@@ -40,12 +40,12 @@ function Guidance() {
             <img src="/assets/person.png" style={{ width: "100%" }} alt="dev" />
           </Grid>
         </Grid>
-        <Grid container spacing={8}>
+        <Grid container spacing={3}>
           <Grid item xs={12} md={8}>
             <Values />
           </Grid>
           <Grid item xs={12} md={4}>
-            ITEM
+            <img src="/assets/about2.png" alt="" />
           </Grid>
         </Grid>
       </Container>
