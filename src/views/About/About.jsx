@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import Main from "./Main";
 import Guidance from "./Guidance";
-import NavFooter from "../../components/NavFooter";
 import { Container, Divider, Box } from "@material-ui/core";
 
 class AboutPage extends Component {
