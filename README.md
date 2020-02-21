@@ -11,6 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * `git pull upstream master` to ensure you have the latest main code then run `git push` to update your forked repo.
 _note_: if a dependencies are added run again `npm i`.
 
+* For more details follow the contribution [guide](https://github.com/splimter/gdg-container/blob/master/CONTRIBUTING.md).
+
 ## Available Scripts
 
 In the project directory, you can run:
