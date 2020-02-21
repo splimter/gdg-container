@@ -4,22 +4,13 @@ import "./App.css";
 import Navbar from "./components/navigation/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import blue from "@material-ui/core/colors/blue";
-
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
 import HomePage from "./views/Home/Home";
 import AboutPage from "./views/About/About";
+import Archive from "./views/Articles/Archive";
+
 import NavFooter from "./components/NavFooter";
-
-const theme = createMuiTheme({
-  palette: {
-    primary: blue
-  },
-  typography: {
-    fontFamily: "Google Sans"
-  }
-});
-
+import theme from "./theme";
 console.log(theme.palette);
 
 function App() {
@@ -31,6 +22,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/articles" component={Archive} />
           </Switch>
           <NavFooter />
         </BrowserRouter>

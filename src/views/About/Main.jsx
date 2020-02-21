@@ -17,7 +17,7 @@ function Main() {
   return (
     <div className={classes.root}>
       <Grid container spacing={8}>
-        <Grid item xs={4}>
+        <Grid item md={4} xs={12}>
           <img
             src="/assets/devfest-network.jpg"
             style={{ width: "100%" }}
@@ -25,7 +25,7 @@ function Main() {
           />
         </Grid>
 
-        <Grid item xs={7}>
+        <Grid item md={8} xs={12}>
           <Typography lineHeight={10}>
             Google Developer Group Chlef is inspired by GTUG/GDG Family . We
             started our journey in Feb 2011. We try to engage student

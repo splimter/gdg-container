@@ -41,11 +41,11 @@ function Guidance() {
           </Grid>
         </Grid>
         <Grid container spacing={3}>
+          <Grid item xs={12} md={4}>
+            <img className="img-fluid" src="/assets/about2.png" alt="" />
+          </Grid>
           <Grid item xs={12} md={8}>
             <Values />
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <img src="/assets/about2.png" alt="" />
           </Grid>
         </Grid>
       </Container>

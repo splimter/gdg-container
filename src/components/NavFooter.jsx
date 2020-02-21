@@ -5,12 +5,10 @@ import { Box, Container } from "@material-ui/core";
 
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-import useTheme from "@material-ui/core/styles/useTheme";
-//
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: "0"
+    marginTop: 16
   },
   content: {
     backgroundColor: theme.palette.primary.light
@@ -38,37 +36,40 @@ function NavFooter(props) {
     <Box component="footer" className={classes.root}>
       <Box py={2} className={classes.socials}>
         <Container>
-          <img
-            className={classes.img}
-            alt="meetup"
-            src="/assets/social-meida-icons/png/002-meetup.png"
-          />
-          <img
-            className={classes.img}
-            alt="meetup"
-            src="/assets/social-meida-icons/png/003-twitter.png"
-          />
-          <img
-            className={classes.img}
-            alt="meetup"
-            src="/assets/social-meida-icons/png/004-linkedin.png"
-          />
-          <img
-            className={classes.img}
-            alt="meetup"
-            src="/assets/social-meida-icons/png/005-facebook.png"
-          />
-          <img
-            className={classes.img}
-            alt="meetup"
-            src="/assets/social-meida-icons/png/006-instagram.png"
-          />
+          <Box display="flex" alignItems="center">
+            <Typography variant="h6">Follow us : </Typography>
+            <img
+              className={classes.img}
+              alt="meetup"
+              src="/assets/social-meida-icons/png/002-meetup.png"
+            />
+            <img
+              className={classes.img}
+              alt="meetup"
+              src="/assets/social-meida-icons/png/003-twitter.png"
+            />
+            <img
+              className={classes.img}
+              alt="meetup"
+              src="/assets/social-meida-icons/png/004-linkedin.png"
+            />
+            <img
+              className={classes.img}
+              alt="meetup"
+              src="/assets/social-meida-icons/png/005-facebook.png"
+            />
+            <img
+              className={classes.img}
+              alt="meetup"
+              src="/assets/social-meida-icons/png/006-instagram.png"
+            />
+          </Box>
         </Container>
       </Box>
       <Box className={classes.content} py={8}>
         <Container>
           <Grid container>
-            <Grid item md="3">
+            <Grid item xs={12} md="3">
               <Typography
                 className={classes.Typography}
                 variant="h5"
@@ -115,7 +116,7 @@ function NavFooter(props) {
                 </Link>
               </Typography>
             </Grid>
-            <Grid item md="3">
+            <Grid item xs={12} md="3">
               <Typography
                 className={classes.Typography}
                 variant="h5"
@@ -141,7 +142,7 @@ function NavFooter(props) {
                 </Link>
               </Typography>
             </Grid>
-            <Grid item md="3">
+            <Grid item xs={12} md="3">
               <Typography
                 className={classes.Typography}
                 variant="h5"

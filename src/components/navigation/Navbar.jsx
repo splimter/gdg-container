@@ -71,11 +71,7 @@ function NavBar() {
           <Box display={{ xs: "none", md: "block", lg: "block" }}>
             {Routes.map((prop, key) => {
               return (
-                <Button
-                  key={key}
-                  className={classes.navItems}
-                  startIcon={<prop.icon />}
-                >
+                <Button key={key} className={classes.navItems}>
                   <NavLink
                     className="text-gray"
                     to={prop.path}

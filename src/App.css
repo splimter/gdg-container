@@ -11,3 +11,15 @@
 .slick-slide div {
   outline: none !important;
 }
+.img-fluid {
+  max-width: 80% !important;
+  margin: auto;
+}
+body {
+  overflow-x: hidden;
+}
+
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}

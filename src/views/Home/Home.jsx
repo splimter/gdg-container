@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Grid, Container, Button } from "@material-ui/core";
+import { Grid, Container, Button, Hidden } from "@material-ui/core";
 import Welcome from "../../components/Welcome";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
@@ -21,12 +21,12 @@ class HomePage extends Component {
         </Box>
 
         {/* about section */}
-        <Box className="bg-blue" py={5} component="section">
+        <Box bgcolor="action.hover" py={5} component="section">
           <Container>
             <Grid container spacing={6}>
               <Grid item xs={12} md={6}>
                 <Box mb={4}>
-                  <Typography variant="h4" color="textSecondary" component="h2">
+                  <Typography variant="h4" color="" component="h2">
                     What we do ?
                   </Typography>
                 </Box>
@@ -36,22 +36,36 @@ class HomePage extends Component {
                   Quibusdam similique excepturi blanditiis omnis, id nam culpa,
                   velit, recusandae inventore atque laboriosam.
                 </Typography>
-                <Box my={1}>
-                  <Typography variant="body2" component="p">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Similique
-                  </Typography>
+                <Box my={3}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={e => {
+                      window.location = "/about";
+                    }}
+                  >
+                    become a sponsor
+                  </Button>
+                  <Button
+                    variant="link"
+                    color="primary"
+                    onClick={e => {
+                      window.location = "/about";
+                    }}
+                  >
+                    read more
+                  </Button>
                 </Box>
                 <Box component="div" mt={4}>
-                  <PersonIcon color="primary" />
+                  <PersonIcon color="text." />
                   <Box component="span" ml={3}>
-                    <PublicIcon color="primary" />
+                    <PublicIcon color="text." />
                   </Box>
                   <Box component="span" ml={3}>
-                    <FavoriteIcon color="primary" />
+                    <FavoriteIcon color="text." />
                   </Box>
                   <Box component="span" ml={3}>
-                    <FormatQuoteIcon color="primary" />
+                    <FormatQuoteIcon color="text." />
                   </Box>
                 </Box>
               </Grid>
@@ -62,11 +76,22 @@ class HomePage extends Component {
                   alignItems="center"
                   justifyContent="center"
                 >
-                  <img
-                    style={{ width: "80%" }}
-                    src="/assets/gdg-team.jpeg"
-                    alt="gdg chlef team"
-                  />
+                  <Box
+                    border={4}
+                    borderRadius="50%"
+                    borderColor="secondary.main"
+                    style={{ overflow: "hidden", width: 300, height: 300 }}
+                  >
+                    <img
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "cover"
+                      }}
+                      src="/assets/gdg-team.jpeg"
+                      alt="gdg chlef team"
+                    />
+                  </Box>
                 </Box>
               </Grid>
             </Grid>
@@ -76,35 +101,18 @@ class HomePage extends Component {
         {/* events Section */}
         <Box py={5} component="section">
           <Container>
-            <Typography
-              align="center"
-              variant="h4"
-              color="textSecondary"
-              component="h2"
-            >
+            <Typography align="center" variant="h4" component="h2">
               Our Events
             </Typography>
-            <Box my={4} mx={"auto"} style={{ width: "75%" }}>
-              <Typography align="center" variant="body2" component="p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus impedit, at dolorem voluptatem debitis, aut aliquid eos
-                iusto harum ipsum officiis quia nulla modi rerum!
-              </Typography>
-            </Box>
 
             <MultipleItems />
           </Container>
         </Box>
 
         {/* Project Section */}
-        <Box className="bg-blue" py={5} component="section">
+        <Box py={5} bgcolor="action.hover" component="section">
           <Box align="center" mb={5}>
-            <Typography
-              align="center"
-              variant="h4"
-              color="textSecondary"
-              component="h2"
-            >
+            <Typography align="center" variant="h4" component="h2">
               Our Projects
             </Typography>
           </Box>
