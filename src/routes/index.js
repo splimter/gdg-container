@@ -25,7 +25,7 @@ const Routes = [
     navbarName: "articles",
     icon: Pages,
     component: ArticlesPage
-  }
+  } 
 ];
 
 export default Routes;

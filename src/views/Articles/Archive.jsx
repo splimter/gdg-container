@@ -20,10 +20,10 @@ export default class ArticlesPage extends Component {
           <Container>
             <Grid container>
               <Grid item md={6}>
-                <SingleArticle />
+                <SingleArticle id={1}/>
               </Grid>
               <Grid item md={6}>
-                <SingleArticle />
+                <SingleArticle id={2}/>
               </Grid>
             </Grid>
           </Container>
